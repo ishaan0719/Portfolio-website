@@ -1,0 +1,35 @@
+# Netlify picks these up automatically on import; no dashboard settings needed.
+[build]
+  command = "npm run build"
+  publish = "out"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+# The OG image and icons are generated without a file extension, so tell
+# browsers and link-preview crawlers (LinkedIn, X, Slack) they are PNGs.
+[[headers]]
+  for = "/opengraph-image"
+  [headers.values]
+    Content-Type = "image/png"
+
+[[headers]]
+  for = "/twitter-image"
+  [headers.values]
+    Content-Type = "image/png"
+
+[[headers]]
+  for = "/icon"
+  [headers.values]
+    Content-Type = "image/png"
+
+[[headers]]
+  for = "/apple-icon"
+  [headers.values]
+    Content-Type = "image/png"
+
+# Hashed build assets never change, so let browsers cache them for a year.
+[[headers]]
+  for = "/_next/static/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
