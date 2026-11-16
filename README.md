@@ -27,10 +27,6 @@ All copy lives in **`src/content.ts`**: headline, experience, projects, leadersh
 - Project links: set `github`, `demo` or `writeup` on a project. Leave them out or set them to `null` to hide them.
 - Change `site.url` once you have a custom domain. It feeds the canonical URL, sitemap, robots.txt and Open Graph tags.
 
-## Resume
-
-Put your PDF at **`public/resume.pdf`** (same filename) and rebuild. The "Download Resume" button links to `/resume.pdf`.
-
 ## Design tokens
 
 Colours are defined once in `src/app/globals.css` (light and dark) and exposed as Tailwind classes (`bg-bg`, `text-ink`, `text-accent`, ...). `src/theme.ts` mirrors the light palette for the generated Open Graph image and favicon. Fonts (Fraunces, Inter) are self-hosted from `src/fonts`.

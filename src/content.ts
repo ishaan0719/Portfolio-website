@@ -37,7 +37,6 @@ export const site = {
   title: "Ishaan Srivastava | AI/ML, Data and Software Engineer",
   description:
     "Ishaan Srivastava builds software, data and AI systems: credit risk models, agentic RAG, LLM agents and ML in production. IIT Bombay, Class of 2027.",
-  resume: "/resume.pdf",
 };
 
 export const profile = {

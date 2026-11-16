@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ArrowRight, Download } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import {
   about,
   beyondWork,
@@ -68,16 +68,6 @@ export default function Home() {
               >
                 View Work
                 <ArrowRight size={18} strokeWidth={1.5} aria-hidden="true" />
-              </a>
-              <a
-                href={site.resume}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="border-ink/20 text-ink hover:border-accent hover:text-accent inline-flex min-h-12 items-center justify-center gap-2 rounded-lg border px-6 font-medium transition duration-200 ease-out hover:-translate-y-0.5"
-              >
-                <Download size={18} strokeWidth={1.5} aria-hidden="true" />
-                Download Resume
-                <span className="sr-only">(PDF, opens in a new tab)</span>
               </a>
             </div>
           </div>
